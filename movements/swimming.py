@@ -5,4 +5,4 @@ class ISwimming:
         self.maximum_depth = 0
 
     def swim(self):
-        print("The animal swims")
+        print(f"{self.name} swims")

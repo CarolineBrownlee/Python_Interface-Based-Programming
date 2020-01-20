@@ -8,5 +8,9 @@ class Penguin(IWalking, ISwimming):
         IWalking.__init__(self)
         self.name = name
 
+    # This overrides run() from IWalking:
+    def run(self):
+        print(f"{self} waddles")
+
     def __str__(self):
         return f'{self.name} the Penguin'
